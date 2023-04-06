@@ -14,7 +14,7 @@ int in4 = 9;
  float kp = 40;
  float kd = 9;
  float ki = 10;
- bool gay;
+
  unsigned long timer = 0;
  void setup() {
   pinMode(enA, OUTPUT);
