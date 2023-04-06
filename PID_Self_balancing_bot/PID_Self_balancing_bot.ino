@@ -68,7 +68,6 @@ int in4 = 9;
      prev_error = error;
      timer = millis();
      if (PID>=0){
-      gay = true;
       throttle = map(PID, 0, 90,  0, 255);
       Serial.print("throttle: ");
       Serial.println(throttle);
@@ -80,7 +79,6 @@ int in4 = 9;
       digitalWrite(in4, LOW);
      }
      else {
-      gay = false;
       throttle = map(PID, -90, 0, 255, 0);
       Serial.print("throttle: ");
       Serial.println(throttle);
